@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;    
+}
+
+body{
+    display: flex;
+    height: 110vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    background-color: #F3F4F6;
+    background-image: url("resources/Background_decor.svg");
+    width: 80%;
+    height: auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    /* grid layout */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content{
+    width: auto;
+    position: relative;
+    height: 300px;
+}
+
+.img{
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.gradient{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.profile{
+    color: #F3F4F6;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 1.5rem;
+    line-height: 1.4;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+
+.career{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.top{
+    margin: 2rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.team{
+    color: #263FA9;
+    margin-bottom: 1rem;
+}
+
+.head{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+.content1{
+    background-color: #C1B6F8;
+    
+}
+
+.content2{
+    background-color: #EDACD2;
+}
+
+.content3{
+    background-color: #9DC4F8
+}
+
+.content4{
+    background-color: #F8D8B0;
+}
+
+.content5{
+    background-color: #86E7D4;
+}
+
+.content6{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-left: 2rem;
+    padding-top: 16rem;
+    font-size: 1rem;
+    font-family: 500;
+}
+
+/* mobile DESIGN */
+@media (max-width: 412px) {
+    body{
+        height: auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    
+}
